@@ -32,6 +32,7 @@ var TaskStatus;
     TaskStatus["Completed"] = "completed";
 })(TaskStatus || (TaskStatus = {}));
 let tasks = [];
+//creating tasks
 function createTask(id, title, description) {
     const newTask = {
         id,
@@ -43,4 +44,14 @@ function createTask(id, title, description) {
     tasks.push(newTask);
     return newTask;
 }
-console.log(createTask(1, "Learn TypeScript", "Study interfaces and enums"));
+//any
+function identity(value) {
+    return value;
+}
+const result = identity("Hello");
+//Generics
+function genericsexample(value) {
+    return value;
+}
+const output = genericsexample("hey there");
+console.log(output);

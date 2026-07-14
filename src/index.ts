@@ -50,4 +50,14 @@ function createTask(id: number, title: string, description: string): Task {
 
   return newTask;
 }
-console.log(createTask(1, "Learn TypeScript", "Study interfaces and enums"));
+//any
+function identity(value: any) {
+  return value;
+}
+const result = identity("Hello");
+//Generics
+function genericsexample<T>(value: T): T {
+  return value;
+}
+const output = genericsexample("hey there");
+console.log(output);
